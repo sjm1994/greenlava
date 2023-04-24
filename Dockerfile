@@ -1,7 +1,16 @@
+# Base image
 FROM gradle:jdk17-alpine
+
+# Set working directory
+WORKDIR /docker-app/springboot
+
 VOLUME /docker-volume/springboot
-ENV BASE_DIR=/docker-app/springboot
-ENV TEMPLATE_DIR=${BASE_DIR}/templates
-COPY build/libs/app.jar ${BASE_DIR}/app.jar
-COPY src/main/resources/templates ${TEMPLATE_DIR}
-ENTRYPOINT ["java","-jar","/docker-app/springboot/app.jar"]
+
+# Copy the application jar file
+COPY build/libs/*.jar app.jar
+
+# Expose port
+EXPOSE 8080
+
+# Set entry point
+ENTRYPOINT ["java","-jar", "-Dspring.profiles.active=prod","app.jar"]
