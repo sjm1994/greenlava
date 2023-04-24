@@ -1,4 +1,4 @@
-FROM gradle:17-jdk-alpine
+FROM gradle:jdk17-alpine
 VOLUME /docker-volume/springboot
 ARG JAR_FILE=build/libs/app.jar
 COPY ${JAR_FILE} app.jar
