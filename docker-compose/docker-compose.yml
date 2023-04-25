@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  docker-springboot:
+      container_name: docker-springboot
+      image: "wlsaud1104/greenlava:latest"
+      ports:
+       - "8080:8080"
+  nginx:
+      container_name: nginx
+      image: "wlsaud1104/greenlava-nginx:latest"
+      ports:
+       - "80:80"
+      depends_on:
+       - docker-springboot
