@@ -14,11 +14,28 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	
+	// for web servlet(getMapping / postMapping / ...)
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// for lombok
 	implementation 'org.projectlombok:lombok:1.18.26'
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+	// for thymeleaf
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+
+	// for swagger-ui over than boot 3.0 ver
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+	
+	// for jwt
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	
+	// for jwt over than java 1.8 ver
+	implementation 'com.sun.xml.bind:jaxb-impl:4.0.1'
+	implementation 'com.sun.xml.bind:jaxb-core:4.0.1'
+	implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
 	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

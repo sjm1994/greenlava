@@ -1,0 +1,11 @@
+jwt:
+  key: c3dc159925
+  secret: 05d6b72d11
+
+springdoc:
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+  swagger-ui:
+    path: swagger.html            # Swagger UI 경로 => localhost:8000/demo-ui.html
+  cache:
+    disabled: true
