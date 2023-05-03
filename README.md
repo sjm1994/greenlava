@@ -3,7 +3,7 @@
 ## 개인 공부용 프로젝트 입니다.
 
 ### 서버, 도메인
-[구글 클라우드](https://cloud.google.com)에서 제공하는 [무료 서버](https://cloud.google.com/free/docs/free-cloud-features?hl=ko#compute) 이용중
+[구글 클라우드](https://cloud.google.com)에서 제공하는 [무료 서버](https://cloud.google.com/free/docs/free-cloud-features?hl=ko#compute) 이용중   
 [내도메인.한국](https://내도메인.한국)에서 제공하는 무료 도메인 사용중([greenlava.kro.kr](http://greenlava.kro.kr))
 
 ### 운영환경
