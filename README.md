@@ -1,6 +1,6 @@
 # greenlava
 
-## 개인 공부용 토이 프로젝트입니다
+## 개인 공부용 저장소입니다.
 
 ### 서버, 도메인
 [구글 클라우드](https://cloud.google.com)에서 제공하는 [무료 서버](https://cloud.google.com/free/docs/free-cloud-features?hl=ko#compute) 이용중   
