@@ -16,6 +16,7 @@ public class JwtProvider {
 
 		HashMap<String, Object> claimsMap = new HashMap<String, Object>();
 
+		// 만약 다른 인자값을 포함하여 넘기고 싶으면 아래 map에 추가하여 key값 기준으로 사용하면 됨
 		claimsMap.put("iss", apiKey);
 
 		String token = Jwts.builder()

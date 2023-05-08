@@ -2,7 +2,7 @@ version: '3.8'
 services:
   docker-springboot:
       container_name: docker-springboot
-      image: "wlsaud1104/greenlava:0.0.5"
+      image: "wlsaud1104/greenlava:latest"
       ports:
        - "8080:8080"
   nginx:
